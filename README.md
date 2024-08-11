@@ -84,7 +84,8 @@ Our chat application now features an intelligent, context-aware interface that a
 
 ## Contact
 
-Your Name - sharma.rishabh@northeastern.edu, rishabhsharma61996@gmail.com
+Name: Rishabh Sharma
+email: sharma.rishabh@northeastern.edu, rishabhsharma61996@gmail.com
 
 <img width="396" alt="Screenshot 2024-07-31 at 4 28 47 PM" src="https://github.com/user-attachments/assets/637e1b4e-b26a-426b-ad4f-984fc4be89f4">
 <img width="360" alt="Screenshot 2024-07-31 at 4 29 17 PM" src="https://github.com/user-attachments/assets/f0976e9c-b376-47b4-9721-61aefbc8c2e9">
