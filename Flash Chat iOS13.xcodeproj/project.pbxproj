@@ -21,6 +21,11 @@
 		CD06AAFC2C597172006BD5FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD06AAFB2C597172006BD5FB /* GoogleService-Info.plist */; };
 		CD06AAFE2C5976CA006BD5FB /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06AAFD2C5976CA006BD5FB /* GoogleSignIn.swift */; };
 		CD7C767F2C59798900FC812D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C767E2C59798900FC812D /* Utilities.swift */; };
+		CD7C769B2C5EC09200FC812D /* UserBehaviorAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C769A2C5EC09200FC812D /* UserBehaviorAnalyzer.swift */; };
+		CD7C769D2C5EC5B900FC812D /* CharacterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C769C2C5EC5B900FC812D /* CharacterExtensions.swift */; };
+		CD7C769F2C5EC74A00FC812D /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C769E2C5EC74A00FC812D /* SentimentAnalyzer.swift */; };
+		CDC7E5942C606B6000E815EE /* EmojiSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7E5932C606B6000E815EE /* EmojiSuggestionView.swift */; };
+		CDC7E5962C62C60700E815EE /* AdaptiveUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7E5952C62C60700E815EE /* AdaptiveUIManager.swift */; };
 		CDD5EE0A2C4F72A000DB427A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5EE092C4F72A000DB427A /* Constants.swift */; };
 		CDD5EE0C2C4F9C8500DB427A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5EE0B2C4F9C8500DB427A /* Message.swift */; };
 		CDD5EE0F2C4FAC3800DB427A /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDD5EE0E2C4FAC3800DB427A /* MessageCell.xib */; };
@@ -48,6 +53,11 @@
 		CD06AAFB2C597172006BD5FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD06AAFD2C5976CA006BD5FB /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		CD7C767E2C59798900FC812D /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CD7C769A2C5EC09200FC812D /* UserBehaviorAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBehaviorAnalyzer.swift; sourceTree = "<group>"; };
+		CD7C769C2C5EC5B900FC812D /* CharacterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExtensions.swift; sourceTree = "<group>"; };
+		CD7C769E2C5EC74A00FC812D /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
+		CDC7E5932C606B6000E815EE /* EmojiSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSuggestionView.swift; sourceTree = "<group>"; };
+		CDC7E5952C62C60700E815EE /* AdaptiveUIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveUIManager.swift; sourceTree = "<group>"; };
 		CDD5EE092C4F72A000DB427A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CDD5EE0B2C4F9C8500DB427A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Message.swift"; sourceTree = SOURCE_ROOT; };
 		CDD5EE0D2C4FAC3800DB427A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -115,6 +125,11 @@
 				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
 				0B628190235DF01B00E35CAF /* ChatViewController.swift */,
 				CD06AAFD2C5976CA006BD5FB /* GoogleSignIn.swift */,
+				CD7C769A2C5EC09200FC812D /* UserBehaviorAnalyzer.swift */,
+				CD7C769C2C5EC5B900FC812D /* CharacterExtensions.swift */,
+				CD7C769E2C5EC74A00FC812D /* SentimentAnalyzer.swift */,
+				CDC7E5932C606B6000E815EE /* EmojiSuggestionView.swift */,
+				CDC7E5952C62C60700E815EE /* AdaptiveUIManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,9 +306,14 @@
 			files = (
 				CD06AAFE2C5976CA006BD5FB /* GoogleSignIn.swift in Sources */,
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
+				CD7C769B2C5EC09200FC812D /* UserBehaviorAnalyzer.swift in Sources */,
+				CDC7E5942C606B6000E815EE /* EmojiSuggestionView.swift in Sources */,
 				CD7C767F2C59798900FC812D /* Utilities.swift in Sources */,
+				CD7C769D2C5EC5B900FC812D /* CharacterExtensions.swift in Sources */,
+				CD7C769F2C5EC74A00FC812D /* SentimentAnalyzer.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
+				CDC7E5962C62C60700E815EE /* AdaptiveUIManager.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				CDD5EE0A2C4F72A000DB427A /* Constants.swift in Sources */,
 				CDD5EE0C2C4F9C8500DB427A /* Message.swift in Sources */,
