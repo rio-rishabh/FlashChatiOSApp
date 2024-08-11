@@ -1,55 +1,93 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# FlashChatiOS
+Flash Chat is a messaging application that combines traditional email/password authentication with Google Sign-In functionality. 
 
-# Flash-Chat
+## Features
 
-## Our Goal
+- User authentication (Email/Password and Google Sign-In)
+- Real-time messaging
+- User-friendly interface with dynamic text effects
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+## Adaptive UI and Smart Emoji Suggestions
 
-## What you will create
+Our chat application now features an intelligent, context-aware interface that adapts to the conversation's tone and user behavior.
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+### Sentiment-Based Color Adaptation
+- The app analyzes the sentiment of messages in real-time.
+- Chat bubble colors subtly shift to reflect the overall mood of the conversation:
+  - Positive sentiments add a soft green tint
+  - Negative sentiments introduce a light red hue
+  - Neutral messages maintain the default color scheme
 
-## What you will learn
+### Dynamic Font Sizing
+- Message text size adjusts based on the average length of recent messages.
+- Longer messages result in slightly smaller text to maintain readability and conserve space.
+- Shorter messages are displayed in a larger, more prominent font.
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+### Smart Emoji Suggestions
+- The app learns from your emoji usage patterns.
+- A convenient emoji suggestion bar appears above the keyboard.
+- Suggested emojis update in real-time based on:
+  - Your most frequently used emojis
+  - The context of the current conversation
+  - Overall chat sentiment
+
+## Technologies Used
+
+- Swift 5.10.1
+- UIKit
+- Firebase (Authentication, Firestore)
+- Google Sign-In
+- CocoaPods
+- SPM(Swift Package Manager)
+
+## Prerequisites
+- Xcode 12.0 or later
+- iOS 13.0 or later
+- CocoaPods
+- Swift Package Manager
 
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+## Installation
+1. Clone the repository
+2. Install Cocoapods
 
-```
+## Configuration
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+### Firebase Setup
+1. Create a new Firebase project
+2. Add an iOS app to the Firebase project
+3. Download the GoogleService-Info.plist and add it to the Xcode project
+4. Enable Email/Password and Google Sign-In authentication methods in Firebase console
 
-![End Banner](Documentation/readme-end-banner.png)
+### Google Sign-In Setup
+1. Configure your Google Sign-In credentials in the Google Cloud Console
+2. Add the reversed client ID to your Xcode project's URL schemes
+
+
+## Usage
+
+1. Run the app in Xcode
+2. On the welcome screen, choose to register or log in
+3. Once authenticated, you can send and receive messages in real-time
+
+## Project Structure
+
+- `WelcomeViewController`: Handles the initial screen and Google Sign-In
+- `LoginViewController`: Manages user login
+- `RegisterViewController`: Handles new user registration
+- `ChatViewController`: Main interface for sending and receiving messages
+
+ ## Acknowledgments
+- Angela Yu's iOS Development Course
+- Firebase Documentation
+- Google Sign-In Documentation
+
+## Contact
+
+Your Name - sharma.rishabh@northeastern.edu, rishabhsharma61996@gmail.com
+
+<img width="396" alt="Screenshot 2024-07-31 at 4 28 47 PM" src="https://github.com/user-attachments/assets/637e1b4e-b26a-426b-ad4f-984fc4be89f4">
+<img width="360" alt="Screenshot 2024-07-31 at 4 29 17 PM" src="https://github.com/user-attachments/assets/f0976e9c-b376-47b4-9721-61aefbc8c2e9">
+<img width="356" alt="Screenshot 2024-07-31 at 4 29 29 PM" src="https://github.com/user-attachments/assets/71a9fd21-702c-41d1-80cf-e246660dddbb">
+<img width="366" alt="Screenshot 2024-07-31 at 4 29 39 PM" src="https://github.com/user-attachments/assets/8a64f8b6-7e34-4ce8-9d54-a9d6159a0f6d">
+<img width="362" alt="Screenshot 2024-07-31 at 4 30 00 PM" src="https://github.com/user-attachments/assets/964f1926-d7a8-48ef-85b6-c241ca80c0aa">
